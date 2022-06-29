@@ -6,9 +6,6 @@
 .pnp.js
 firebase.js
 
-#API Key
-.env
-
 # testing
 /coverage
 
