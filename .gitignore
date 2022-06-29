@@ -4,7 +4,9 @@
 /node_modules
 /.pnp
 .pnp.js
-firebase.js
+
+#API Key
+.env
 
 # testing
 /coverage
