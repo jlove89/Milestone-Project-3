@@ -13,46 +13,46 @@ function Home() {
         <div className='home__row'>
             <Product
             id="12321341"
-            title="The Lean Startup: How Constant Innovation Creates Radically Successful Businesses Paperback"
-            price={13.13}
+            title="Cracking the Coding Interview: 189 Programming Questions and Solutions 6th Edition (NEW)"
+            price={24.49}
             rating={5}
-            image="https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._SX325_BO1,204,203,200_.jpg"/>
+            image="https://m.media-amazon.com/images/P/0984782850.01._SCLZZZZZZZ_SX500_.jpg"/>
             <Product             
             id="49538094"
-            title="Kenwood kMix Stand Mixer for Baking, Stylish Kitchen Mixer with K-beater, Dough Hook and Whisk, 5 Litre Glass Bowl"
-            price={239.00}
+            title="HIWUP KN95 Face Masks 50 Pack, Breathable Disposable 5-Ply KN95 Protection Mask, Black"
+            price={7.99}
             rating={4}
-            image="https://images-na.ssl-images-amazon.com/images/I/81O%2BGNdkzKL._AC_SX450_.jpg"/>
+            image="https://m.media-amazon.com/images/I/71zYkvoXboL._SL1280_.jpg"/>
         </div>
 
         <div className='home__row'>
             <Product
             id="4903850"
-            title="Fitbit Charge 3 Fitness Activity Tracker, Graphite/Black, One Size (S & L Bands Included)"
-            price={99.99}
-            rating={3}
-            image="https://images-na.ssl-images-amazon.com/images/I/71Swqqe7XAL._AC_SX466_.jpg"/>
+            title="Apple Watch Series 7 Smart Watch, Fitness Tracker, Blood Oxygen App, Water Resistant"
+            price={359.00}
+            rating={5}
+            image="https://m.media-amazon.com/images/I/71fxj9HPLPL._AC_SL1500_.jpg"/>
             <Product
             id="23445930"
-            title="Amazon Echo (3rd generation) | Smart speaker with Alexa, Charcoal Fabric"
-            price={94.99}
-            rating={5}
-            image="https://media.very.co.uk/i/very/P6LTG_SQ1_0000000071_CHARCOAL_SLf?$300x400_retinamobilex2$"/>
+            title="Fire TV Cube, 4K HD Hands Free Streaming & Alexa Voice Remote included"
+            price={59.99}
+            rating={4}
+            image="https://m.media-amazon.com/images/I/517S3hcoI0L._AC_SL1000_.jpg"/>
             <Product
             id="3254354345"
-            title="New Apple iPad Pro (12.9-inch, Wi-Fi, 128GB) - Silver (4th Generation)"
-            price={598.99}
-            rating={4}
-            image="https://images-na.ssl-images-amazon.com/images/I/816ctt5WV5L._AC_SX385_.jpg"/>
+            title="2021 Apple iMac (24-inch, Apple M1 chip with 8‑core CPU and 7‑core GPU, 8GB RAM, 256GB) - Blue"
+            price={1294.00}
+            rating={5}
+            image="https://m.media-amazon.com/images/I/61p-ADlugUS._AC_SL1500_.jpg"/>
         </div>
 
         <div className='home__row'>
             <Product
             id="90829332"
-            title="Samsung LC49RG90SSUXEN 49' Curved LED Gaming Monitor - Super Ultra Wide Dual WQHD 5120 x 1440"
-            price={998.99}
-            rating={4}
-            image="https://images-na.ssl-images-amazon.com/images/I/6125mFrzr6L._AC_SX355_.jpg"/>
+            title="SAMSUNG 49-Inch CHG90 144Hz Curved Gaming Monitor (LC49HG90DMNXZA) – Super Ultrawide Screen QLED Computer Monitor, 3840 x 1080p Resolution, 1ms Response, FreeSync 2 with HDR,Black"
+            price={799.99}
+            rating={3}
+            image="https://m.media-amazon.com/images/I/81Butfqtj5L._AC_SL1500_.jpg"/>
         </div>
       </div>
     </div>
