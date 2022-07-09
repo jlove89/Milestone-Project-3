@@ -46,6 +46,7 @@ function App() {
           </Route>
           <Route path="/payment">
           <Header/>
+          <Payment/>
           <h1>Payment Route</h1>
           </Route>
         <Route path="/">
