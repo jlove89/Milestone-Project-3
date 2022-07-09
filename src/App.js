@@ -7,6 +7,7 @@ import Checkout from './Checkout';
 import Login from './Login'
 import { auth } from './firebase'
 import { useStateValue } from './StateProvider';
+import Payment from './Payment'
 
 // BEM
 function App() {
@@ -47,7 +48,6 @@ function App() {
           <Route path="/payment">
           <Header/>
           <Payment/>
-          <h1>Payment Route</h1>
           </Route>
         <Route path="/">
           <Header/>
