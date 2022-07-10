@@ -1,12 +1,42 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './Payment.css'
 import { useStateValue } from './StateProvider'
 import CheckoutProduct from './CheckoutProduct'
 import { Link } from 'react-router-dom'
+import { CardElement, useStripe, useElements } from '@stripe/react-stripe-js'
+import CurrencyFormat from 'react-currency-format'
+import { getBasketTotal } from './reducer'
 
 function Payment() {
   const [{ basket, user }, dispatch] = useStateValue()
+  const stripe = useStripe()
+  const elements = useElements()
+  const [error, setError] = useState(null)
+  const [disabled, setDisabled] = useState(true)
+  const [succeeded, setSucceeded] = useState(false)
+  const [processing, setProcessing] = useState('')
+  const [clientSecret, setClientSecret] = useState(true)
+
+    useEffect(() => {
+        const getClientSecret = async () => {
+            const response = await axios
+        }
+
+        getClientSecret()
+    }, [basket])
   
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    setProcessing(true)
+
+    //const payload = await stripe
+  }
+  
+  const handleChange = e => {
+    setDisabled(e.empty)
+    setError(e.error ? e.error.message : '')
+  }
+
   return (
     <div className='payment'>
         <div className='payment__container'>
@@ -46,6 +76,24 @@ function Payment() {
                 </div>
                 <div className='payment__details'>
                     {/* Stripe */}
+                    <form onSubmit={handleSubmit}>
+                        <CardElement onChange={handleChange}/>
+                        <div className='payment__priceContainer'>
+                        <CurrencyFormat
+                            renderText={(value) => (
+                            <h3>Order Total: {value}</h3>
+                            )}
+                                decimalScale={2}
+                                value={getBasketTotal(basket)}
+                                displayType={"text"}
+                                thousandSeparator={true}
+                                prefix={"$"} />
+                            <button disabled={processing || disabled || succeeded}>
+                            <span>{processing ? <p>Processing</p> : 'Buy Now'}</span>
+                            </button>
+                        </div>
+                            {error && <div>{error}</div>}
+                    </form>
                 </div>
             </div>
         </div>
