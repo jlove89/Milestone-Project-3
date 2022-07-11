@@ -31,6 +31,8 @@ function Payment() {
         getClientSecret()
     }, [basket])
   
+    console.log('The Secret is >>>', clientSecret)
+
   const handleSubmit = async (e) => {
     e.preventDefault()
     setProcessing(true)
@@ -40,6 +42,7 @@ function Payment() {
             card: elements.getElement(CardElement)
     }
     }).then(({ paymentIntent }) => {
+        
 
         setSucceeded(true)
         setError(null)
