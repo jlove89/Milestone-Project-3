@@ -1,7 +1,9 @@
 const functions = require("firebase-functions");
-const express = require("express")
+const admin = require('firebase-admin')
+admin.initializeApp
+const express = require("express");
 const cors = require("cors");
-const stripe = require("stripe")('sk_test_51LK8bSGeGrORBBUzslT3mC85jn10diyEk8NSsMEOhcItyRFtYwHaYrtloTgFimxVGjno2cv30caIwYCKd1VZhHZw00XiWRUYeg')
+const stripe = require("stripe")('sk_test_51LK8bSGeGrORBBUzslT3mC85jn10diyEk8NSsMEOhcItyRFtYwHaYrtloTgFimxVGjno2cv30caIwYCKd1VZhHZw00XiWRUYeg');
 
 // API
 
